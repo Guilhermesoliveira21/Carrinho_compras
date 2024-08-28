@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/Group 54.png" type="image/x-icon">
+    <title>Mercado</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1 class="home">Home</h1>
+            <h1 class="onse">Onse</h1>
+        </div>
+        <div class="links">
+            <ul class="lista">
+                <li class="link"><a href="">Ofertas</a></li>
+                <li class="link"><a href="">Sobre</a></li>
+                <li class="link"><a href="">Lançamentos</a></li>
+                <li class="link"><a href="">Login</a></li>
+            </ul>
+            
+            <div class="trilho" onclick="thema()">
+                <div class="botao"></div>
+            </div>
+        </div>
+        <div class="menu">
+            <img src="./assets/images/dark.svg" alt="" onclick="menu()">
+        </div>
+    
+    </header>
+    <ul class="none" id="menu">
+        <li class="menu_link"><a class="a" href="#">Ofertas</a></li>
+        <li class="menu_link"><a class="a" href="#">Sobre</a></li>
+        <li class="menu_link"><a class="a" href="#">Lançamentos</a></li>
+        <li class="menu_link"><a class="a" href="#">Login</a></li>
+        <div class="trilhoo" onclick="thema()">
+            <p id="tema-mobile">Tema</p>
+        </div>
+    </ul>
+    <main class="container">
+        <section class="carrinho">
+           <section class="carrinho_container">
+            <div class="carrinho_compra">
+               <div class="title">
+                <h2 class="carrinho_minhas">Minhas</h2>
+                <h2 class="carrinho_compras">Compras</h2>
+               </div>
+               <div class="selecionar">
+                    <select class="select" id="select">   
+                        <option class="produtos" value="celular - R$1700">celular - R$1700</option>
+                        <option class="produtos" value="teclado - R$150">Teclado - R$150</option>
+                        <option class="produtos" value="mouse - R$75">Mouse - R$75</option>
+                        <option class="produtos" value="fone - R$25">Fone - R$25</option>
+                        <option class="produtos" value="notebook - R$2200">Notebook - R$2200</option>
+                        <option class="produtos" value="monitor - R$799">Monitor - R$799</option>
+                        <option class="produtos" value="xbox - R$2200">Xbox - R$2200</option>
+                    </select>
+                    <div class="quantidade">
+                        <input type="number" placeholder="quantidade" id="qtd">
+                    </div>
+               </div>
+               <div class="botoes">
+                    <div>
+                        <button class="btn" onclick="adicionar()">Adicionar</button>
+                    </div>
+                    <div>
+                        <button class="btn_red" onclick="limpar()">Limpar</button>
+                    </div>
+               </div>
+               <div class="imagens">
+                    <div class="celular">
+                        <img src="./assets/images/celular.svg" alt="">
+                    </div>
+                    <div class="fone">
+                        <img src="./assets/images/fone.svg" alt="">
+                    </div>
+               </div>
+            </div>
+            <div class="carrinhos_minhas_compras">
+                <div class="carrinho_img">
+                    <img src="./assets/images/cart.svg" alt="Carrinho">
+                </div>
+                <div class="carrinho_escolhido">
+                    <p class="produtos_escolhido">Carrinho vazio</p>
+                </div>
+                <div class="carrinho_total">
+                    <p class="total">Total</p>
+                    <p class="valor">R$ 0</p>
+                </div>
+            </div>
+           </section>
+        </section>
+    </main>
+
+    <script src="/js/thema.js"></script>
+    <script src="/js/produtos.js"></script>
+</body>
+
+</html>
